@@ -1,0 +1,121 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #2b0033, #0c0014);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ===== PAGE FADE + SCALE ===== */
+  .page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: all 1.2s ease;
+    position: relative;
+  }
+  
+  .page.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+  /* ===== STARS ===== */
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: url("https://i.imgur.com/9QZ7H3T.png"); */
+    animation: moveStars 60s linear infinite;
+    opacity: 0.6;
+    z-index: 0;
+  }
+  
+  @keyframes moveStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-1000px); }
+  }
+  
+  /* ===== FLOATING HEARTS ===== */
+  .floating-heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 24px;
+    animation: floatHeart linear forwards;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  @keyframes floatHeart {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-120vh) scale(1.6);
+      opacity: 0;
+    }
+  }
+  
+  /* ===== CARD ===== */
+  .card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(22px);
+    border-radius: 30px;
+    padding: 38px 30px;
+    text-align: center;
+    box-shadow: 0 30px 80px rgba(255, 0, 120, 0.45);
+  }
+  
+  /* ===== IMAGE ===== */
+  .hero-img {
+    width: 150px;
+    margin-bottom: 15px;
+    animation: floatImg 4s ease-in-out infinite;
+  }
+  
+  @keyframes floatImg {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* ===== TEXT ===== */
+  h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff9ad5;
+    font-size: 28px;
+  }
+  
+  p {
+    color: #f5cbe0;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  /* ===== BUTTON ===== */
+  .love-btn {
+    margin-top: 22px;
+    padding: 12px 32px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #ff5fa2, #ff87c4);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba(255, 105, 180, 0.6);
+    transition: 0.3s;
+  }
+  
+  .love-btn:hover {
+    transform: scale(1.08);
+  }
+  
