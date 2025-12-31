@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Btechwala2020/proj-01.git",
+  "homepage": "https://github.com/Btechwala2020/proj-02.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
