@@ -27,19 +27,19 @@ export default function Page1() {
     <div className={`page ${show ? "show" : ""}`}>
       <div className="stars"></div>
 
-      <div className="card">
+      <div className="card1">
       <img src={`${import.meta.env.BASE_URL}bubu.gif`} alt="cute" className="hero-img" />
 
 
-        <h1>I have a little secret 💕</h1>
+        <h1 className="page1h1">I have a little secret 💕</h1>
 
-        <p>
+        <p className="page1p">
           Only you deserve this.
           <br />
           Because you mean everything to me ✨
         </p>
 
-        <button className="love-btn" onClick={() => navigate("/page2")}>
+        <button className="love-btnpage1" onClick={() => navigate("/page2")}>
           Open 💖
         </button>
       </div>

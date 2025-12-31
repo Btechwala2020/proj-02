@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+     /* background:
+  radial-gradient(circle at 20% 20%, #5a189a 0%, transparent 40%),
+  radial-gradient(circle at 80% 30%, #9d4edd 0%, transparent 45%),
+  radial-gradient(circle at 50% 80%, #3c096c 0%, transparent 50%),
+  linear-gradient(180deg, #0b0016, #12001f); */
+    overflow: hidden;
+  }
+  
+  .page-wrapper {
+    height: 100vh;
+    display: flex;
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-box {
+    background: rgba(140, 60, 200, 0.25);
+    backdrop-filter: blur(25px);
+    border-radius: 28px;
+    padding: 40px 50px;
+    text-align: center;
+    box-shadow: 0 30px 80px rgba(170, 80, 255, 0.5);
+    animation: fadeIn 1s ease;
+  }
+  
+  .title {
+    font-size: 32px;
+    color: #f1d9ff;
+    margin-bottom: 12px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #e0c7ff;
+    margin-bottom: 25px;
+  }
+  
+  .play-btn {
+    background: linear-gradient(135deg, #b26bff, #8a2be2);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 12px 30px rgba(160, 80, 255, 0.6);
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 18px 40px rgba(200, 120, 255, 0.8);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .card-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(35px) saturate(160%);
+    -webkit-backdrop-filter: blur(35px) saturate(160%);
+  
+    border-radius: 28px;
+    padding: 45px 50px;
+    text-align: center;
+  
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+      0 20px 50px rgba(120, 60, 255, 0.45),
+      inset 0 0 30px rgba(255, 255, 255, 0.1);
+  
+    transition: all 0.4s ease;
+  }
+  
+  /* Soft floating effect */
+  .card-box:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow:
+      0 30px 70px rgba(150, 80, 255, 0.6),
+      inset 0 0 40px rgba(255, 255, 255, 0.15);
+  }
+  
+  /* Text shine */
+  .title {
+    color: #f3d9ff;
+    text-shadow:
+      0 0 10px rgba(190, 120, 255, 0.7),
+      0 0 25px rgba(160, 80, 255, 0.6);
+  }
+  
+  .subtitle {
+    color: #e7c9ff;
+  }
+  
+  /* Button glow */
+  .play-btn {
+    background: linear-gradient(135deg, #c77dff, #9d4edd);
+    box-shadow:
+      0 0 20px rgba(200, 140, 255, 0.8),
+      0 0 40px rgba(180, 120, 255, 0.4);
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 30px rgba(200, 140, 255, 1),
+      0 0 60px rgba(200, 140, 255, 0.6);
+  }
+  

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
+.ny-page {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at top, #0b0014, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ny-text {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(36px, 9vw, 90px);
+  font-weight: 800;
+  letter-spacing: 4px;
+  opacity: 0;
+  text-align: center;
+}
+
+/* YEAR BIG */
+.year {
+  font-size: clamp(70px, 18vw, 160px);
+}
+
+/* 🌈 MULTI COLOR */
+.rainbow {
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #ff8c00,
+    #ffe600,
+    #00ffcc,
+    #7f00ff
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowMove 4s linear infinite;
+}
+
+@keyframes rainbowMove {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 300%;
+  }
+}
+
+/* ✨ GLITTER GLOW */
+.glitter {
+  text-shadow:
+    0 0 10px rgba(255,255,255,0.6),
+    0 0 20px rgba(255,0,150,0.6),
+    0 0 40px rgba(0,200,255,0.6);
+}

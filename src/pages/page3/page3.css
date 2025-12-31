@@ -1,12 +1,27 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(circle at top, #2b0033, #0c0014);
+  background:
+  radial-gradient(circle at 20% 20%, #5a189a 0%, transparent 40%),
+  radial-gradient(circle at 80% 30%, #9d4edd 0%, transparent 45%),
+  radial-gradient(circle at 50% 80%, #3c096c 0%, transparent 50%),
+  linear-gradient(180deg, #0b0016, #12001f);
   position: relative;
   overflow-x: hidden;
 }
 
+body {
   
+  font-family: "Poppins", sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, #5a189a 0%, transparent 40%),
+    radial-gradient(circle at 80% 30%, #9d4edd 0%, transparent 45%),
+    radial-gradient(circle at 50% 80%, #3c096c 0%, transparent 50%),
+    linear-gradient(180deg, #0b0016, #12001f);
+
+
+}
+
   .page {
     min-height: 100vh;
     display: flex;
@@ -82,6 +97,14 @@ body {
     padding: 20px 16px 0px;
     text-align: center;
     box-shadow: 0 20px 40px rgba(255, 0, 120, 0.35);
+    background: rgba(120, 40, 180, 0.25);
+  backdrop-filter: blur(25px);
+  border-radius: 28px;
+  position: relative;
+  bottom: 5vh;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(160, 80, 255, 0.45) !important;
+  text-align: center;
   }
   
   /* 🎞️ TOP GIF */
@@ -182,4 +205,88 @@ text-transform: capitalize;
 }
 .card-title {
   font-family: "Playfair Display", serif;
+}
+/* ================== BASE ================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #2b0033, #0c0018);
+  overflow: hidden;
+}
+
+/* ================== MAIN PAGE ================== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================== GLASS CARD ================== */
+.card {
+  background: rgba(120, 40, 180, 0.25);
+  backdrop-filter: blur(25px);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(160, 80, 255, 0.45) !important;
+  text-align: center;
+}
+
+/* ================== TITLE ================== */
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(22px, 5vw, 36px);
+  color: #e8b3ff;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 10px rgba(180, 120, 255, 0.6),
+    0 0 25px rgba(180, 120, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+/* ================== TEXT ================== */
+.text {
+  font-size: clamp(16px, 4vw, 22px);
+  color: #dca8ff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ================== BUTTON ================== */
+.btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #a855f7, #d946ef);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(190, 100, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 45px rgba(190, 100, 255, 0.7);
+}
+
+/* ================== FLOATING BACKGROUND STARS ================== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.12), transparent 45%),
+    radial-gradient(circle at 50% 70%, rgba(255,255,255,0.1), transparent 50%);
+  pointer-events: none;
+  animation: glowMove 12s linear infinite;
+}
+
+@keyframes glowMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(-40px); }
 }
