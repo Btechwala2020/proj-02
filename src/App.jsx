@@ -6,7 +6,7 @@ import Page2 from "./pages/page2/Page2";
 import Page3 from "./pages/page3/Page3";
 
 export default function App() {
-  const audioRef = useRef(new Audio("/music.mp3"));
+  const audioRef = useRef(new Audio("/proj-01/music.mp3"));
 
   const playMusic = () => {
     const audio = audioRef.current;
@@ -17,13 +17,13 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/proj-01">
       <Routes>
-         <Route path="/" element={<Page1 />} />
-        <Route path="/page2" element={<Page2 playMusic={playMusic} />} /> 
-        <Route path="/page3" element={<Page3 />} />
+        {/* ✅ THIS IS IMPORTANT */}
+        <Route index element={<Page1 />} />
 
-
+        <Route path="page2" element={<Page2 playMusic={playMusic} />} />
+        <Route path="page3" element={<Page3 />} />
       </Routes>
     </BrowserRouter>
   );

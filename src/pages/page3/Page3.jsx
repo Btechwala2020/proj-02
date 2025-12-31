@@ -148,11 +148,8 @@ export default function Page3() {
         Only For You 💘
         </div>
   
-        <img
-          src="/babu.gif"
-          alt="love"
-          className="top-gif"
-        />
+        <img src={`${import.meta.env.BASE_URL}babu.gif`} alt="cute" className="hero-img" />
+
   
         <h1 ref={textRef} className="text"></h1>
       </div>

@@ -32,7 +32,8 @@ export default function Page2({ playMusic }) {
   return (
     <div className={`page ${show ? "show" : ""}`}>
       <div className="card">
-        <img src="/hulkenberg.gif" alt="cute" className="hero-img" />
+      <img src={`${import.meta.env.BASE_URL}hulkenberg.gif`} alt="cute" className="hero-img" />
+
 
         <h1>Ready for something special? 💖</h1>
         <p>Tap the button and feel the magic ✨</p>
