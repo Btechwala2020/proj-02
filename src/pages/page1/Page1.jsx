@@ -28,7 +28,7 @@ export default function Page1() {
       <div className="stars"></div>
 
       <div className="card1">
-      <img src={`${import.meta.env.BASE_URL}bubu.gif`} alt="cute" className="hero-img" />
+      <img src={"/bubu.gif"} alt="cute" className="hero-img" />
 
 
         <h1 className="page1h1">I have a little secret 💕</h1>

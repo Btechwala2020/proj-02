@@ -32,7 +32,7 @@ export default function Page2({ playMusic }) {
   return (
     <div className={`page ${show ? "show" : ""}`}>
       <div className="card2">
-      <img src={`${import.meta.env.BASE_URL}hulkenberg.gif`} alt="cute" className="hero-img" />
+      <img src={"/hulkenberg.gif"} alt="cute" className="hero-img" />
 
 
         <h1>Ready for something special? 💖</h1>

@@ -8,8 +8,8 @@ import Page3 from "./pages/page3/Page3";
 import Page5 from "./pages/page5/Page5";
 // import Page4 from "./pages/page4/Page4";
 export default function App() {
-  const audioRef = useRef(new Audio("/proj-02/music1.mp3"));
-  const audioRef1 = useRef(new Audio("/proj-02/music2.mp3"));
+  const audioRef = useRef(new Audio("/music1.mp3"));
+  const audioRef1 = useRef(new Audio("/music2.mp3"));
 
   const playMusic = () => {
     const audio = audioRef.current;
@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter basename="/proj-01">
+    <BrowserRouter >
       <Routes>
         {/* ✅ THIS IS IMPORTANT */}
         <Route index element={<Page1 />} />

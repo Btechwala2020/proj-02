@@ -120,7 +120,7 @@ export default function Page3() {
         </div>
 
         <img
-          src={`${import.meta.env.BASE_URL}babu.gif`}
+          src={"/babu.gif"}
           alt="cute"
           className="hero-img"
         />
